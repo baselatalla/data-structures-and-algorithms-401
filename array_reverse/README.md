@@ -2,7 +2,8 @@
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 ## Whiteboard Process
-![Screenshot](/arry_reverse/Screenshot_8.png)
+![Screenshot_8](https://user-images.githubusercontent.com/55560502/120941911-0f0f0e00-c72e-11eb-8df7-22bfc9042fed.png)
+
 
 1. Problem Domain
 Re-iterate the problem domain that you have been asked. This can be done either verbatim from the initial question, or a summary in your own words, whatever makes more sense to you.
