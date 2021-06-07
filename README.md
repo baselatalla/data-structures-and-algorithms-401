@@ -1,9 +1,9 @@
 # data-structures-and-algorithms-401
 
-| No. |  challenge | LINk  |
-| --- | --- | --- |
-| 1     |  challenge-01   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_reverse/README.md) |
-| 2     |  challenge-02   |     |
+| No.   |    challenge    |LINK |
+|  ---  |       ---       | --- |
+| 1     |  Revers array   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_reverse/README.md)        |
+| 2     |   Shift array   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_shift/array_shift.md)     |
 | 3     |  challenge-03   |     |
 | 4     |  challenge-04   |     |
 | 5     |  challenge-05   |     |
