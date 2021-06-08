@@ -62,7 +62,7 @@ reverse_array([12,3,4])
 
 
 ## Verification: 
-
+```
 In: a = [12,3,4]
 expected Out: [4,3,12]
 
@@ -80,5 +80,5 @@ new_array += [arr[0]]   #([12,3] + [4])
 index -1                #( 1 - 1 = 0) 
 
 return [12,3,4]
-
+```
 >>> Verifide
