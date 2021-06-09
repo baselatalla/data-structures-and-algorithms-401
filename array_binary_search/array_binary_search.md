@@ -76,22 +76,23 @@ Time Complexity = O(log(n))
 
 ```python
 
-Input: a = [2, 5, 7, 8, 9] , x = 8
+Input: a = [2, 5, 7, 8, 12] , x = 8
 expected Out: 3
 
 low = 0
 high = 5 - 1 = 4
+
 # itration number one
 while 0<5 (true) >> 
-mid = 0 + 4 = 4 // 2 = 2 so 
+mid = 0 + 4 = 4 // 2 = 2 
 if arr[2] < 8 (true) >>
 low = 2 + 1 = 3 
 
 # itration number tow
 while low =3 <=  high=4  (true) >>
 mid =7//2 =3 
-if arr[3]<8 (fales) xx
-if arr[3]>8 (fales) xx 
+if arr[3] < 8 (fales) xx
+if arr[3] > 8 (fales) xx 
 return 3   # verified 
  
 ```
