@@ -4,7 +4,7 @@
 |  ---  |       ---       | --- |
 | 1     |  Revers array   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_reverse/README.md)        |
 | 2     |   Shift array   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_shift/array_shift.md)     |
-| 3     |  challenge-03   |     |
+| 3     |   array_binary_search  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_binary_search/array_binary_search.md)   |
 | 4     |  challenge-04   |     |
 | 5     |  challenge-05   |     |
 | 6     |  challenge-06   |     |
