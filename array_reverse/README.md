@@ -1,35 +1,84 @@
-# Reverse an Array
-Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+# Code Challenge-01 Whiteboarding
+## Problem Domain:
 
-## Whiteboard Process
-![Screenshot](/arry_reverse/Screenshot_8.png)
+> > Reverse an array without using any built in function
 
-1. Problem Domain
-Re-iterate the problem domain that you have been asked. This can be done either verbatim from the initial question, or a summary in your own words, whatever makes more sense to you.
+## In/Out
 
-2. Visual
-Draw out what the problem domain is and visually solve the problem. Label all of the appropriate properties, define your input and output, and show how you will approach the problem towards a solution.
+> > Input: Array of n elements
+> > Output: Array in reversed ordered
 
-(It’s common for people to switch up the ordering on visuals/problem domain depending on the problem; sometimes, drawing a picture helps you understand the problem better, at which point you can write out the problem domain.)
+## Edge cases:
 
-3. Algorithm
-The algorithm is a breakdown of what you need to achieve. This should be a bulleted list or a general overview of what you plan to implement later in the interview.
+- Empty array
+- Null
+- Not an array
 
-The most practical way of creating an algorithm is often to focus on the example input/output in your visual. You should consider the steps that your algorithm will take to use the input in moving towards the output. 
+## Visulization
 
-4. Big O
-Analyze the space AND time efficiency of the algorithm that you just proposed. You should revisit this analysis throughout the interview as you make updates to your algorithm during pseudocode/code/stepthrough.
+  - In: [5,3,2,6,4,48,8]
+  - Out: [8,48,4,6,2,3,5]
 
-5. Pseudocode
-Write out pseudocode that defines your algorithm! Use the pseudocode cheat sheet as a guideline to what symbols are acceptable.
 
-6. Code
-Write out syntactically correct code in the language of your course to solve the problem presented. Your real code should be based off of your pseudocode.
+  - In: []
 
-7. Test
-There are two main parts to testing. First, walk through both the problem domain and your solution to make sure that it both works and is efficient. This should be a careful, line-by-line stepthrough of your code, where you track variables in a written table along the way. 
+  - Out: []
 
-## Approach & Efficiency   
-define a function which tack an array calculate the length of the arra
-define a new array using for loop and rang to iterate over the arrain each iteration 
-append the last elemnet in the array to the first of the new one
+
+## Big-O: 
+
+Time Complexity  = O(n) 
+
+
+## Algortihm:
+    1. define new array
+    2. loop over the input_array and for every itreation add the last element to the new one and so on until the first elemnt.
+    3. return the new array 
+
+## Pseudo Code
+    1. Define new array 
+    2. index = lengthv-1
+    3. for the range of 0- (length of the array)
+        1. new_array + arr[length]
+        2. length - 1
+    4. return new_array 
+
+## Code
+```python
+  def reverse_array(arr):
+      if not( type(arr) == type([]) ):
+          return 'error, pleas inter an array !'
+      new_array = []
+      length = len(arr)
+      index = length-1
+      for x in range(length):
+          new_array += [arr[index]]
+          index -= 1
+      return print(new_array)
+
+reverse_array([12,3,4])
+
+```
+
+
+## Verification: 
+```
+In: a = [12,3,4]
+expected Out: [4,3,12]
+
+length = 3
+index = 2
+for x in range(3):
+x = 0
+new_array += [arr[2]]   #([] + [12])
+index -1                #( 2 - 1 = 1)
+x = 1
+new_array += [arr[1]]   #([12] + [3])
+index -1                #( 2 - 1 = 1)
+x = 2
+new_array += [arr[0]]   #([12,3] + [4])
+index -1                #( 1 - 1 = 0) 
+
+return [12,3,4]
+```
+>>> Verifide
