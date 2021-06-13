@@ -22,8 +22,6 @@ Challenge-06
 
 
 
-
-
 ## Approach & Efficiency
 learn a lot about LinkedList how to deal with it and traversed throw it 
 
