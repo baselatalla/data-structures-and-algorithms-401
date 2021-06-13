@@ -62,12 +62,51 @@ class LinkedList:
             current.next = Node(value)
 
 
+
+    def insertBefore(self,value,newVal):
+        """
+         In this method we new node with the given value before the value node
+        """
+        current = self.head
+        while current.next is not None:
+            if current.next.value == value:
+                break
+            current = current.next
+        if current.next is None:
+            raise Exception(f"The list hasn't include {value}, insert valide node ")
+        else:
+            node = Node(newVal)
+            node.next = current.next
+            current.next = node  
+
+
+
+    def insertAfter(self,value,newVal):
+        """
+         which add a new node with the given newValue immediately after the first value node
+        """
+        current = self.head
+        while current is not None:
+            if current.value == value:
+                break
+            current = current.next
+        if current is None:
+            raise Exception(f"The list hasn't include {value}, insert valide node " )
+        else:
+            new_node = Node(newVal)
+            new_node.next = current.next
+            current.next = new_node  
+    
+
+            
+
+
 if __name__ == "__main__":
     list = LinkedList()
     list.insert(46)
     list.append(55)
     list.append(66)
-    # list.append(10)
+    list.append(10)
     print(list)
     # print(list.includes(10))
     # list.insert(55)

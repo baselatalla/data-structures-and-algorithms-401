@@ -62,13 +62,34 @@ def  test_includes_if_fulse():
     expected = False
     assert actual == expected
 
-def test_str():
-    list3 = LinkedList()
-    list3.insert(46)
-    list3.append(55)
-    list3.append(66)
-    actual = list3.__str__()
+def test_str_and_append():
+    list6 = LinkedList()
+    list6.insert(46)
+    list6.append(55)
+    list6.append(66)
+    actual = list6.__str__()
     expected = '{46}->{55}->{66}->NULL'
+    assert actual == expected
+
+def test_inseartBefor():
+    list8 = LinkedList()
+    list8.insert(46)
+    list8.append(55)
+    list8.append(66)
+    list8.insertBefore(55,99)
+    actual = list8.__str__()
+    expected = '{46}->{99}->{55}->{66}->NULL'
+    assert actual == expected
+
+
+def test_insertAfter():
+    list7 = LinkedList()
+    list7.insert(46)
+    list7.append(55)
+    list7.append(66)
+    list7.insertAfter(55,99)
+    actual = list7.__str__()
+    expected = '{46}->{55}->{99}->{66}->NULL'
     assert actual == expected
 
     
