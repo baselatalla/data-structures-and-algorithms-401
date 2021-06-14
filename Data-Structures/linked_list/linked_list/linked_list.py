@@ -68,16 +68,21 @@ class LinkedList:
          In this method we new node with the given value before the value node
         """
         current = self.head
-        while current.next is not None:
-            if current.next.value == value:
-                break
-            current = current.next
-        if current.next is None:
-            raise Exception(f"The list hasn't include {value}, insert valide node ")
+        if current.value != value:
+            while current.next is not None:
+                if current.next.value == value:
+                    break
+                current = current.next
+            if current.next is None:
+                raise Exception(f"The list hasn't include {value}, insert valide node ")
+            else:
+                node = Node(newVal)
+                node.next = current.next
+                current.next = node  
         else:
             node = Node(newVal)
-            node.next = current.next
-            current.next = node  
+            self.head = node 
+            self.head.next = current
 
 
 

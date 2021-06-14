@@ -77,8 +77,9 @@ def test_inseartBefor():
     list8.append(55)
     list8.append(66)
     list8.insertBefore(55,99)
+    list8.insertBefore(46,99)
     actual = list8.__str__()
-    expected = '{46}->{99}->{55}->{66}->NULL'
+    expected = '{99}->{46}->{99}->{55}->{66}->NULL'
     assert actual == expected
 
 
@@ -88,8 +89,9 @@ def test_insertAfter():
     list7.append(55)
     list7.append(66)
     list7.insertAfter(55,99)
+    list7.insertAfter(66,99)
     actual = list7.__str__()
-    expected = '{46}->{55}->{99}->{66}->NULL'
+    expected = '{46}->{55}->{99}->{66}->{99}->NULL'
     assert actual == expected
 
     
