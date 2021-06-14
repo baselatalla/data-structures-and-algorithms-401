@@ -13,12 +13,14 @@ Challenge-06
 .insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
 .insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
 
+Challenge-07 
+* Write a method for the Linked List class which takes a number, k, as a parameter. Return the node's value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 # Code Challenge-06 Whiteboarding
 
 
 
-![imamge](asstes/screenshot.jpg)
+![imamge](asstes/ldldl.png)
 
 
 
@@ -38,14 +40,8 @@ Challenge-06
 - - `name.insertBefor(self,value,newVal)`= which add a new node with the given newValue immediately before the first value node
 -`name.insertAfter(self,value,newVal)`=which add a new node with the given newValue immediately after the first value node
 
+-`kthFromEnd:` Return the node’s value that is k from the end of the linked list
 
 
-## Solution 
 
- list = LinkedList()
-    list.insert(46)
-    list.append(55)
-    list.append(66)
-    list.insertBefore(55,99)
-    list.insertAfter(55,99)
-    print(list)
+

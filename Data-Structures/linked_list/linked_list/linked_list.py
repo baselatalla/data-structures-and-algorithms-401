@@ -102,7 +102,21 @@ class LinkedList:
             new_node.next = current.next
             current.next = new_node  
     
-
+    def kthFromEnd(self,value):
+        counter=0
+        Current =self.head
+        while Current.next != None:
+            counter+=1
+            Current=Current.next
+        kth_value=counter-value
+        Current =self.head
+        if kth_value >= 0:
+            for i in range(kth_value+1):
+                value=Current.value
+                Current=Current.next
+            return value
+        else:
+            raise Exception('The number exceeds the list length !!')
             
 
 
@@ -112,6 +126,11 @@ if __name__ == "__main__":
     list.append(55)
     list.append(66)
     list.append(10)
+    list.kthFromEnd(0)
+    list.kthFromEnd(2)
+    list.kthFromEnd(3)
+
+
     print(list)
     # print(list.includes(10))
     # list.insert(55)
