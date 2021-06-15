@@ -7,7 +7,7 @@
 | 3     |   array_binary_search  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_binary_search/array_binary_search.md)   |
 | 4     |  interview  1 |   [link](https://docs.google.com/spreadsheets/d/1m1fUckd_rjXtIc-50U2ozWW3ov9zcRr19XEaVD6dhPo/edit#gid=1807550832)   |
 | 5     |  LinkedList(05, 06, 07)  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/linked_list/README.md)   |
-| 8     |  challenge-08   |     |
+| 8     |  ll-zip   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/ll-zip/challenges/ll_zip/README.md)   |
 | 9     |  challenge-09   |     |
 | 10    |  challenge-10   |     |
 | 11    |  challenge-11   |     |
