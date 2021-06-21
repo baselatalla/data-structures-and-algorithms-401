@@ -1,5 +1,6 @@
 ## Challenge
 deal with new Data Structures `(stack&queue)` how to make multiple input and remove or peek 
+
 ## Approach & Efficiency
 
 ## Stacks
