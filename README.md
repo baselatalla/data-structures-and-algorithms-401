@@ -11,7 +11,7 @@
 | 9     |   interview  2   |  [link](https://docs.google.com/spreadsheets/d/16dNTqJcvFSdjP1Sz0ZIHkIfkiiMx5Qp7prnRd87vr_Q/edit?usp=sharing)  |   
 | 10    |  stacks_and_queues  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/stack-and-queue/Data_Structures/stacks_and_queues#readme)   |
 | 11    |  queue_with_stacks   |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/queue-with-stacks/challenges/queue_with_stacks/README.md)  |
-| 12    |  fifo_animal_shelter  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/queue-with-stacks/challenges/fifo_animal_shelter/README.md)  |  
+| 12    |  fifo_animal_shelter  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/challenges/fifo_animal_shelter)  |  
 | 13    |  challenge-13   |     |
 | 14    |  challenge-14a  |     |
 | 15    |  challenge-14b  |     |  
