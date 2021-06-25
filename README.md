@@ -13,6 +13,6 @@
 | 11    |  queue_with_stacks   |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/queue-with-stacks/challenges/queue_with_stacks/README.md)  |
 | 12    |  fifo_animal_shelter  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/challenges/fifo_animal_shelter)  |  
 | 13    |  Data Visualization   |    [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/challenges/multi_bracket_validation/README.md) |
-| 14    |  challenge-14a  |     |
+| 14    |  Trees  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Data_Structures/trees#readme)   |
 | 15    |  challenge-14b  |     |  
 | 16    |  challenge-15   |     |  
