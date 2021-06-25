@@ -6,7 +6,7 @@
 | 2     |   Shift array   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_shift/array_shift.md)      |
 | 3     |   array_binary_search  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/array_binary_search/array_binary_search.md)   |
 | 4     |  interview  1   |   [link](https://docs.google.com/spreadsheets/d/1m1fUckd_rjXtIc-50U2ozWW3ov9zcRr19XEaVD6dhPo/edit#gid=1807550832)   |
-| 5     |  LinkedList(05, 06, 07)  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/linked_list/README.md)   |
+| 5     |  LinkedList(05, 06, 07)  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Data_Structures/linked_list#readme)   |
 | 8     |  ll-zip       |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/ll-zip/challenges/ll_zip/README.md)   |
 | 9     |   interview  2   |  [link](https://docs.google.com/spreadsheets/d/16dNTqJcvFSdjP1Sz0ZIHkIfkiiMx5Qp7prnRd87vr_Q/edit?usp=sharing)  |   
 | 10    |  stacks_and_queues  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/stack-and-queue/Data_Structures/stacks_and_queues#readme)   |
