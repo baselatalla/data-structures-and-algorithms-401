@@ -105,6 +105,19 @@ class Binary_Search_Tree(Tree):
                 if node.value == value :
                     return True
             return False
+
+    def maximum(self):
+        if not self.root:
+            return "the tree is empty"
+        return max(self.preOrder()) 
+        
+        
+
+            
+
+            
+
+        
             
 
 

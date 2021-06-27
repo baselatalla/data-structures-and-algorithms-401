@@ -10,6 +10,8 @@ Each node can have an arbiatry number of chid node.
 
 ## Challenge
 
+### lab-15
+
 1. `Node`
 
 - Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
@@ -39,19 +41,47 @@ Adds a new node with that value in the correct location in the binary search tre
 1. Argument: value
 2. Returns: boolean indicating whether or not the value is in the tree at least once.
 
+### lab-16
+
+Write the following method for the Binary Tree class
+
+`find maximum value`
+
+- Arguments: none
+- Returns: number
+
+#### whiteboard lab-16 
+
+![image](assets/whiteboarding-Basel1.jpg)
+
+
+
 ## Approach & Efficiency
+
+### lab-15
+
+O(log(n))
+
+### lab-16
 
 O(log(n))
 
 ## API
 
-* class Tree :
+### lab-15
+
+- class Tree :
 
 - `preOrder` : priting the values of the tree by the order of `root >> left >> right`
 - `inOrder` : priting the values of the tree by the order of `left >> root >> right`
 - `postOrder`: priting the values of the tree by the order of `left >> right >> root`
 
-* class Binary_Search_Tree:
+- class Binary_Search_Tree:
 
 - `Add` : add anode to the tree according to its value
 - `Contains` : check if there is a node with tha same value.
+
+
+### lab-16
+
+- `maximum` : Find the maximum value of a binary tree
