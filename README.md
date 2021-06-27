@@ -14,5 +14,5 @@
 | 12    |  fifo_animal_shelter  |   [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/challenges/fifo_animal_shelter/README.md)  |  
 | 13    |  Data Visualization   |    [link](https://github.com/baselatalla/data-structures-and-algorithms-401/blob/main/challenges/multi_bracket_validation/README.md) |
 | 14    |  Trees  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Data_Structures/trees#readme)   |
-| 15    |  challenge-14b  |     |  
-| 16    |  challenge-15   |     |  
+| 15    |  tree_max  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Data_Structures/trees#readme)   |  
+| 16    |  challenge   |     |  
