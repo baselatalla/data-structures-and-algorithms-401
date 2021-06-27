@@ -76,8 +76,24 @@ def test_BinarySearchTree1():
     tree.Add('H')
     assert tree.preOrder() == ['A', 'B', 'D', 'E', 'C', 'F','H']
 
+def test_maxvalue():
+    bst = Binary_Search_Tree()
+    bst.Add(10)
+    bst.Add(8)
+    bst.Add(20)
+    bst.Add(40)
 
+    assert bst.maximum() == 40
 
+def test_maximum_value():
+    bst = Binary_Search_Tree()
+    bst.Add(10)
+    bst.Add(12)
+    bst.Add(21)
+    bst.Add(50)
+    bst.Add(1000)
+    bst.Add(700)
+    assert bst.maximum()== 1000
     
 def test_BinarySearchTree_contains():
     bst = Binary_Search_Tree()
