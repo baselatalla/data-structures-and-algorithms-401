@@ -1,8 +1,47 @@
+class Queue:
+
+    def __init__(self):
+        self.front = None
+        self.rear = None
+
+    def enqueue(self, value):
+        node = value
+        if self.front == None:
+            self.front = node  
+            self.rear = node
+        else:
+
+            self.rear.next = node 
+            self.rear = node
+
+    def dequeue(self):
+        if not self.isEmpty():
+           temp = self.front 
+           self.front = temp.next
+           temp.next = None
+           return temp
+        else:
+            return ("This Queue are empty, try to fill it first !")
+
+
+    def isEmpty(self):
+        if self.front == None:
+            return True
+        else:
+            return False
+
+    def peek(self):
+        try:
+            return self.front.value
+        except:
+            return "This is Empty Queue"
+
 class Node:
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
+        self.next = None
 
 
 class Tree:
@@ -84,6 +123,23 @@ class Tree:
         
         return max_value
 
+    def breadth_first(self):
+        Queue_breadth = Queue()
+        output= []
+        node = self.root
+        Queue_breadth.enqueue(node)
+
+        while Queue_breadth.front:
+            node_front = Queue_breadth.dequeue()
+            output += [node_front.value]
+            if node_front.left :
+                Queue_breadth.enqueue(node_front.left)
+
+            if node_front.right :
+                Queue_breadth.enqueue(node_front.right)
+
+        return output
+
 
 class Binary_Search_Tree(Tree):
     def Add(self, value):
@@ -131,4 +187,6 @@ if __name__ == '__main__':
     bst.Add(25)
     bst.Add(88)
     bst.Add(7)
+
+    print(bst.breadth_first())
     print(bst.preOrder())

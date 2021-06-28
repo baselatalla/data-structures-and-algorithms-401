@@ -111,6 +111,30 @@ def test_BinarySearchTree_contains():
     assert bst.Contains(7) == True
     assert bst.Contains(100) == False
 
+def test_breadth_first():
+    bst = Binary_Search_Tree()
+    bst.Add(10)
+    bst.Add(8)
+    bst.Add(20)
+    bst.Add(10)
+    bst.Add(25)
+    bst.Add(88)
+    bst.Add(7)
+
+    assert bst.breadth_first() == [10, 8, 20, 7, 10, 25, 88]
+
+def test_breadth_first1():
+    bst = Binary_Search_Tree()
+    bst.Add(10)
+    bst.Add(12)
+    bst.Add(21)
+    bst.Add(50)
+    bst.Add(1000)
+    bst.Add(700)
+    
+    assert bst.breadth_first() == [10, 12, 21, 50, 1000, 700]
+
+
 @pytest.fixture
 def prepared_tree():
     tree = Tree()
