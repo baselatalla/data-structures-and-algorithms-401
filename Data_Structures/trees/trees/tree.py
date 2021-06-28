@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self,value):
+    def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
@@ -7,11 +7,10 @@ class Node:
 
 class Tree:
     def __init__(self):
-        self.root = None 
+        self.root = None
 
-
-    def  preOrder(self):
-        output =[] 
+    def preOrder(self):
+        output = []
         if not self.root:
             return output
 
@@ -19,109 +18,108 @@ class Tree:
 
             output.append(node.value)
 
-            if node.left :
+            if node.left:
                 traversal(node.left)
             if node.right:
                 traversal(node.right)
-           
+
         traversal(self.root)
 
-        return output 
+        return output
 
     def inOrder(self):
-        output =[] 
+        output = []
         if not self.root:
             return output
 
         def traversal(node):
 
-
-            if node.left :
+            if node.left:
                 traversal(node.left)
 
             output.append(node.value)
 
             if node.right:
                 traversal(node.right)
-           
-        traversal(self.root)
-        
-        return output 
 
-    def  postOrder(self):
-        output =[] 
+        traversal(self.root)
+
+        return output
+
+    def postOrder(self):
+        output = []
         if not self.root:
             return output
 
         def traversal(node):
 
-
-            if node.left :
+            if node.left:
                 traversal(node.left)
 
             if node.right:
                 traversal(node.right)
-                
+
             output.append(node.value)
-           
+
         traversal(self.root)
+
+        return output
+
+    def maximum_value(self):
+        if self.root == None:
+            return "This is empty tree"
+        node = self.root
+        global max_value
+        max_value = node.value
+
+        def maximum(node):
+            global max_value
+            if not node:
+                return max_value
+            if node.value > max_value:
+                max_value = node.value
+            maximum(node.left)
+            maximum(node.right)
+        maximum(self.root)
         
-        return output  
+        return max_value
 
 
 class Binary_Search_Tree(Tree):
-    def Add(self,value):
+    def Add(self, value):
         if not self.root:
             self.root = Node(value)
         else:
             node = self.root
-            while True :
+            while True:
                 if node.value >= value:
                     if node.left:
                         node = node.left
-                    else :
+                    else:
                         node.left = Node(value)
                         break
                 elif node.value < value:
                     if node.right:
                         node = node.right
-                    else :
+                    else:
                         node.right = Node(value)
                         break
 
-
-    def Contains(self,value):
+    def Contains(self, value):
         if not self.root:
             return "the tree is empty"
         else:
             node = self.root
-            while node.right!= None or node.left != None:
-                if node.value == value :
+            while node.right != None or node.left != None:
+                if node.value == value:
                     return True
                 elif node.value < value:
-                    node= node.right
+                    node = node.right
                 elif node.value > value:
                     node = node.left
-                if node.value == value :
+                if node.value == value:
                     return True
             return False
-
-    def maximum(self):
-        if not self.root:
-            return "the tree is empty"
-        return max(self.preOrder()) 
-        
-        
-
-            
-
-            
-
-        
-            
-
-
-
 
 
 if __name__ == '__main__':

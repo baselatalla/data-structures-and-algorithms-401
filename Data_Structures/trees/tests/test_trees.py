@@ -83,7 +83,7 @@ def test_maxvalue():
     bst.Add(20)
     bst.Add(40)
 
-    assert bst.maximum() == 40
+    assert bst.maximum_value() == 40
 
 def test_maximum_value():
     bst = Binary_Search_Tree()
@@ -93,7 +93,7 @@ def test_maximum_value():
     bst.Add(50)
     bst.Add(1000)
     bst.Add(700)
-    assert bst.maximum()== 1000
+    assert bst.maximum_value()== 1000
     
 def test_BinarySearchTree_contains():
     bst = Binary_Search_Tree()
