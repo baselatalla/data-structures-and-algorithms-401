@@ -50,10 +50,20 @@ Write the following method for the Binary Tree class
 - Arguments: none
 - Returns: number
 
-#### whiteboard lab-16 
+#### whiteboard lab-16
 
 ![image](assets/whiteboarding-Basel1.jpg)
 
+### lab-17
+
+Write a function called `breadth first`
+
+- Arguments: tree
+- Return: list of all values in the tree, in the order they were encountered
+
+#### whiteboard lab-17
+
+![image](assets/whiteboarding-Basel2.jpg)
 
 
 ## Approach & Efficiency
@@ -65,6 +75,10 @@ O(log(n))
 ### lab-16
 
 O(log(n))
+
+### lab-17
+
+O(n)
 
 ## API
 
@@ -81,7 +95,10 @@ O(log(n))
 - `Add` : add anode to the tree according to its value
 - `Contains` : check if there is a node with tha same value.
 
-
 ### lab-16
 
 - `maximum` : Find the maximum value of a binary tree
+
+### lab-17
+
+- `tree-breadth-first` :list of all values in the tree, in the order they were
