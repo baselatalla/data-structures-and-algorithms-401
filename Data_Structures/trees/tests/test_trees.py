@@ -1,5 +1,5 @@
 from trees import __version__
-from trees.tree import Binary_Search_Tree, Tree, Node
+from trees.tree import Binary_Search_Tree, Tree, Node ,k_ary_tree, k_ary_Node, tree_fizz_buzz, preorderTraversal
 import pytest
 
 
@@ -133,6 +133,38 @@ def test_breadth_first1():
     bst.Add(700)
     
     assert bst.breadth_first() == [10, 12, 21, 50, 1000, 700]
+
+def test_k_ary_tree():
+    k_tree = k_ary_tree()
+    k_tree.root = k_ary_Node(1)
+    k_tree.root.child.append(k_ary_Node(2))
+    k_tree.root.child.append(k_ary_Node(3))
+    k_tree.root.child.append(k_ary_Node(4)) 
+    k_tree.root.child[0].child.append(k_ary_Node(5)) 
+    k_tree.root.child[0].child[0].child.append(k_ary_Node(10)) 
+    k_tree.root.child[0].child.append(k_ary_Node(6)) 
+    k_tree.root.child[0].child[1].child.append(k_ary_Node(11))
+    k_tree.root.child[0].child[1].child.append(k_ary_Node(12))
+    k_tree.root.child[0].child[1].child.append(k_ary_Node(13)) 
+    k_tree.root.child[2].child.append(k_ary_Node(15))
+    k_tree.root.child[2].child.append(k_ary_Node(8))
+    k_tree.root.child[2].child.append(k_ary_Node(9))
+
+    new_tree = tree_fizz_buzz(k_tree)          
+    assert new_tree.root.child[0].value == '2'
+    assert new_tree.root.child[1].value == 'fizz'
+    assert new_tree.root.child[2].value == '4'
+    assert new_tree.root.child[0].child[0].value == 'buzz' 
+    assert new_tree.root.child[0].child[0].child[0].value == 'buzz'
+    assert new_tree.root.child[0].child[1].value == 'fizz'
+    assert new_tree.root.child[0].child[1].child[0].value == '11'
+    assert new_tree.root.child[0].child[1].child[1].value == 'fizz'
+    assert new_tree.root.child[0].child[1].child[2].value == '13'
+    assert k_tree.root.child[2].child[0].value == 'fizzbuzz'
+    assert k_tree.root.child[2].child[1].value == '8'
+    assert k_tree.root.child[2].child[2].value == 'fizz'
+
+    
 
 
 @pytest.fixture
