@@ -1,3 +1,5 @@
+from collections import deque
+
 class Queue:
 
     def __init__(self):
@@ -7,22 +9,21 @@ class Queue:
     def enqueue(self, value):
         node = value
         if self.front == None:
-            self.front = node  
+            self.front = node
             self.rear = node
         else:
 
-            self.rear.next = node 
+            self.rear.next = node
             self.rear = node
 
     def dequeue(self):
         if not self.isEmpty():
-           temp = self.front 
-           self.front = temp.next
-           temp.next = None
-           return temp
+            temp = self.front
+            self.front = temp.next
+            temp.next = None
+            return temp
         else:
             return ("This Queue are empty, try to fill it first !")
-
 
     def isEmpty(self):
         if self.front == None:
@@ -35,6 +36,7 @@ class Queue:
             return self.front.value
         except:
             return "This is Empty Queue"
+
 
 class Node:
     def __init__(self, value):
@@ -120,22 +122,22 @@ class Tree:
             maximum(node.left)
             maximum(node.right)
         maximum(self.root)
-        
+
         return max_value
 
     def breadth_first(self):
         Queue_breadth = Queue()
-        output= []
+        output = []
         node = self.root
         Queue_breadth.enqueue(node)
 
         while Queue_breadth.front:
             node_front = Queue_breadth.dequeue()
             output += [node_front.value]
-            if node_front.left :
+            if node_front.left:
                 Queue_breadth.enqueue(node_front.left)
 
-            if node_front.right :
+            if node_front.right:
                 Queue_breadth.enqueue(node_front.right)
 
         return output
@@ -177,6 +179,48 @@ class Binary_Search_Tree(Tree):
                     return True
             return False
 
+# _________________________________________________ lab-18 _________________________
+
+
+class k_ary_Node:
+    def __init__(self, value):
+        self.value = value
+        self.child = []
+
+class k_ary_tree:
+    def __init__(self):
+        self.root = None
+
+def tree_fizz_buzz(tree):
+    if tree.root == None:
+        return "This is empty tree, insert a tree with data"
+
+    new_tree = tree
+    node = new_tree.root
+
+    def fizz_buzz(value):
+        if value % 3 == 0 and value % 5 == 0:
+            return 'fizzbuzz'
+        elif value % 3 == 0:
+            return 'fizz'
+        elif value % 5 == 0:
+            return 'buzz'
+        else:
+            return str(value)
+
+    def traversal(node):
+        node.value = fizz_buzz(node.value)
+        if len(node.child) > 0:
+            for child in node.child :
+                traversal(child)
+        
+    traversal(node)
+
+    return new_tree
+
+
+# ***********************************************************************************
+
 
 if __name__ == '__main__':
     bst = Binary_Search_Tree()
@@ -188,5 +232,7 @@ if __name__ == '__main__':
     bst.Add(88)
     bst.Add(7)
 
+   
+    
     print(bst.breadth_first())
     print(bst.preOrder())
