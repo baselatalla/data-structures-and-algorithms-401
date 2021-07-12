@@ -18,3 +18,4 @@
 | 16    |  tree breadth first   |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Data_Structures/trees#readme)   |  
 | 17    |  tree-fizz-buzz  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Data_Structures/trees#readme)   |  
 | 18    |  Insertion-Sort  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Insertion-Sort#readme)   |  
+| 19    |  Merge-Sort  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/merge-sort#readme)   |  
