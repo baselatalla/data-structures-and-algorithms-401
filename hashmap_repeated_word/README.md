@@ -6,10 +6,15 @@ Write a function called repeated word that finds the first word to occur more th
 - Return: string
 
 ## Whiteboard Process
-![]()
+
+![whiteboarding](asstes/whiteboarding_Basel.jpg)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+time :Θ(n log(n))
+space: O(1)
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+[Code](hashmap_repeated_word/hashmap_repeated_word.py)
+[Test](tests/test_hashmap_repeated_word.py)
