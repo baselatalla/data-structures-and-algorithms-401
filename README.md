@@ -20,3 +20,5 @@
 | 18    |  Insertion-Sort  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/Insertion-Sort#readme)   |  
 | 19    |  Merge-Sort  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/merge-sort#readme)   |  
 | 20    |  Quick Sort  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/quick_sort#readme)   |  
+| 21    |  Hashtable  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/quick_sort#readme)   |  
+| 20    |  hashmap-repeated-word  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/hashmap_repeated_word#readme)   |  
