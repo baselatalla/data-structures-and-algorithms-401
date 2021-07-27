@@ -22,3 +22,4 @@
 | 20    |  Quick Sort  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/quick_sort#readme)   |  
 | 21    |  Hashtable  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/hashtable#readme)   |  
 | 20    |  hashmap-repeated-word  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/hashmap_repeated_word#readme)   |  
+| 21   |  hashmap-tree-intersection  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/hashmap-tree-intersection#readme)   |  
