@@ -91,3 +91,67 @@ def test_get_Null():
     graph = Graphs()
     
     assert graph.get_nodes() == "NULL"
+
+def test_breadth_first1():
+    g=Graphs()
+    a=g.add_node('a')
+    b=g.add_node('b')
+    c=g.add_node('c')
+    d=g.add_node('d')
+
+    g.add_edge(a,b,5)
+    g.add_edge(a,c,4)   
+    g.add_edge(c,d,3)
+    g.add_edge(b,d,3)
+
+    actual = g.breadth_first(a)
+    expected = ['a', 'b', 'c', 'd']
+
+    assert actual == expected 
+
+def test_breadth_frist2():
+    g=Graphs()
+    a=g.add_node('a')
+    b=g.add_node('b')
+    c=g.add_node('c')
+    d=g.add_node('d')
+    e=g.add_node('e')
+    f=g.add_node('f')
+
+    g.add_edge(a,b,5)
+    g.add_edge(a,c,4)   
+    g.add_edge(c,d,3)
+    g.add_edge(b,d,3)
+    g.add_edge(d,e,3)
+    g.add_edge(d,f,3)
+
+    actual = g.breadth_first(a)
+    expected = ['a', 'b', 'c', 'd', 'e', 'f']
+
+    assert actual == expected 
+
+def test_breadth_frist3():
+    g=Graphs()
+    a=g.add_node('Pandora')
+    b=g.add_node('Arendelle')
+    c=g.add_node('Metroville')
+    d=g.add_node('Monstroplolis')
+    e=g.add_node('Narnia')
+    f=g.add_node('Naboo')
+
+    g.add_edge(a,b,5)
+    g.add_edge(b,c,4)   
+    g.add_edge(b,d,3)
+    g.add_edge(c,b,3)
+    g.add_edge(c,d,3)
+    g.add_edge(c,f,3)
+    g.add_edge(c,e,3)
+    g.add_edge(d,b,3)
+    g.add_edge(d,b,3)
+    g.add_edge(d,b,3)
+
+    actual = g.breadth_first(a)
+    expected = ['Pandora', 'Arendelle', 'Metroville', 'Monstroplolis', 'Narnia', 'Naboo']
+
+    assert actual == expected 
+
