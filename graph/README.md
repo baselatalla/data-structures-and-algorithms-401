@@ -54,3 +54,29 @@ O(1)
 * size
     -Arguments: none
     -Returns the total number of nodes in the graph
+
+
+--------------------------------------------------------- ***code challenge-37*** -------------------------------------------------------------
+
+## Challenge Summary
+
+Write the following method for the Graph class:
+
+* breadth first
+    - Arguments: Node
+    - Return: A collection of nodes in the order they were visited.
+    - Display the collection
+
+### Whiteboard Process
+
+![whiteboarding](assets/whiteboardingBasel.jpg)
+
+### Approach & Efficiency
+
+O(n)
+
+### Solution
+
+code: [file](graph/graph.py)
+tests: [file](tests/test_graph.py)
+
