@@ -82,6 +82,7 @@ Write the following method for the Graph class:
 
 ### Whiteboard Process
 
+![whiteboarding](assets/whiteboardingBasel.jpg)
 
 ### Approach & Efficiency
 

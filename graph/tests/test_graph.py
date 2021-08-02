@@ -136,8 +136,8 @@ def test_breadth_frist3():
     b=g.add_node('Arendelle')
     c=g.add_node('Metroville')
     d=g.add_node('Monstroplolis')
-    e=g.add_node('Narnia')
-    f=g.add_node('Naboo')
+    e=g.add_node('Naboo')
+    f=g.add_node('Narnia')
 
     g.add_edge(a,b,5)
     g.add_edge(b,c,4)   
@@ -147,8 +147,13 @@ def test_breadth_frist3():
     g.add_edge(c,f,3)
     g.add_edge(c,e,3)
     g.add_edge(d,b,3)
-    g.add_edge(d,b,3)
-    g.add_edge(d,b,3)
+    g.add_edge(d,c,3)
+    g.add_edge(d,f,3)
+    g.add_edge(f,c,3)
+    g.add_edge(f,d,3)
+    g.add_edge(f,e,3)
+    g.add_edge(e,c,3)
+    g.add_edge(e,f,3)
 
     actual = g.breadth_first(a)
     expected = ['Pandora', 'Arendelle', 'Metroville', 'Monstroplolis', 'Narnia', 'Naboo']
