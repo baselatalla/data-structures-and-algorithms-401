@@ -27,3 +27,4 @@
 | 23  |  Graphs  |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/graph#readme)   |
 | 24 |  graph-breadth-first |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/graph#readme)   |
 | 25 |  graph-business-trip |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/graph-business-trip#readme)   |
+| 26 |  graph-depth-first |  [link](https://github.com/baselatalla/data-structures-and-algorithms-401/tree/main/graph#readme)   |
