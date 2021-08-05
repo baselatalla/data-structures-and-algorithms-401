@@ -80,18 +80,21 @@ O(n)
 code: [file](graph/graph.py)
 tests: [file](tests/test_graph.py)
 
---------------------------------------------------------- ***code challenge-37*** -------------------------------------------------------------
+
+--------------------------------------------------------- ***code challenge-38*** -------------------------------------------------------------
 
 ## Challenge Summary
 
-Write a function called business trip
-Arguments: graph, array of city names
-Return: cost or null
-Determine whether the trip is possible with direct flights, and how much it would cost.
+Write the following method for the Graph class:
+
+depth first
+Arguments: Node (Starting point of search)
+Return: A collection of nodes in their pre-order depth-first traversal order
+Display the collection
 
 ### Whiteboard Process
 
-![whiteboarding](assets/whiteboardingBasel.jpg)
+![whiteboarding](assets/whiteboarding-Basel10.jpg)
 
 ### Approach & Efficiency
 
