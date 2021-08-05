@@ -109,6 +109,27 @@ def test_breadth_first1():
 
     assert actual == expected 
 
+def test_depth_first1():
+    g=Graphs()
+    a=g.add_node('a')
+    b=g.add_node('b')
+    c=g.add_node('c')
+    d=g.add_node('d')
+
+    g.add_edge(a,b,5)
+    g.add_edge(b,a,5)
+    g.add_edge(a,c,4)   
+    g.add_edge(c,a,4)   
+    g.add_edge(c,d,3)
+    g.add_edge(d,c,3)
+    g.add_edge(b,d,3)
+    g.add_edge(d,b,3)
+
+    actual = g.depth_first(a)
+    expected = ['a', 'c', 'd', 'b']
+
+    assert actual == expected 
+
 def test_breadth_frist2():
     g=Graphs()
     a=g.add_node('a')
@@ -127,6 +148,27 @@ def test_breadth_frist2():
 
     actual = g.breadth_first(a)
     expected = ['a', 'b', 'c', 'd', 'e', 'f']
+
+    assert actual == expected 
+
+def test_debth_frist2():
+    g=Graphs()
+    a=g.add_node('a')
+    b=g.add_node('b')
+    c=g.add_node('c')
+    d=g.add_node('d')
+    e=g.add_node('e')
+    f=g.add_node('f')
+
+    g.add_edge(a,b,5)
+    g.add_edge(a,c,4)   
+    g.add_edge(c,d,3)
+    g.add_edge(b,d,3)
+    g.add_edge(d,e,3)
+    g.add_edge(d,f,3)
+
+    actual = g.depth_first(a)
+    expected = ['a', 'c', 'd', 'f', 'b']
 
     assert actual == expected 
 
@@ -160,3 +202,32 @@ def test_breadth_frist3():
 
     assert actual == expected 
 
+def test_depth_frist3():
+    g=Graphs()
+    a=g.add_node('Pandora')
+    b=g.add_node('Arendelle')
+    c=g.add_node('Metroville')
+    d=g.add_node('Monstroplolis')
+    e=g.add_node('Naboo')
+    f=g.add_node('Narnia')
+
+    g.add_edge(a,b,5)
+    g.add_edge(b,c,4)   
+    g.add_edge(b,d,3)
+    g.add_edge(c,b,3)
+    g.add_edge(c,d,3)
+    g.add_edge(c,f,3)
+    g.add_edge(c,e,3)
+    g.add_edge(d,b,3)
+    g.add_edge(d,c,3)
+    g.add_edge(d,f,3)
+    g.add_edge(f,c,3)
+    g.add_edge(f,d,3)
+    g.add_edge(f,e,3)
+    g.add_edge(e,c,3)
+    g.add_edge(e,f,3)
+
+    actual = g.depth_first(a)
+    expected = ['Pandora', 'Arendelle', 'Monstroplolis', 'Narnia', 'Naboo', 'Metroville']
+
+    assert actual == expected 
